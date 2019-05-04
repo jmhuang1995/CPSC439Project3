@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>TM Conway's GOL</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <h1>Justin Huang 439 Project 3 TM Conway's GOL </h1>
+  <canvas id="grid" width="42" height="17"></canvas>
+</body>
+
+<script src="../js/draw.js"></script>
+<script>
+  var canvas = document.getElementById("grid");
+  var context = canvas.getContext("2d");
+  var scale = 40;
+  canvas.width = canvas.width * scale;
+  canvas.height = canvas.height * scale;
+  draw_cells(context, scale);
+</script>
+
+</html>
